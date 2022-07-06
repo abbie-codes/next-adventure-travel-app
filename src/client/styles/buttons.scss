@@ -1,0 +1,237 @@
+/*index.html buttons - Landing Page
+*
+*
+Layout for Log in and Sign up buttons*/
+.login-signup-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17%;
+    min-height: fit-content;
+}
+/*Styles for Sign up button*/
+.sign-up {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    min-height: fit-content;
+}
+
+.sign-up:hover,
+.sign-up:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.sign-up:active {
+    opacity: .5;
+}
+
+/*Styles for Log in button and sign out button*/
+.log-in,
+.sign-out {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    min-height: fit-content;
+}
+
+.log-in:hover,
+.sign-out:hover {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+/* my-trips.html buttons - Page where you add trips and view trip cards
+*
+*
+Layout for upcoming and past trip buttons */
+.upcoming-past-trips {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 1%;
+    width: 80%;
+    margin: auto;
+}
+
+/*Style for upcoming and past trip buttons*/
+.upcoming,
+.past {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 3%;
+    border: none;
+    cursor: pointer;
+
+    &.upcoming {
+        border-bottom: 4px #065dd8 solid;
+    }
+
+    &.past {
+        border-bottom: 4px #bfbfbf solid;
+    }
+}
+
+/*Layout for discard trip and add trip buttons*/
+.discard-add-buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin: auto;
+    min-height: fit-content;
+}
+
+@media (max-width: 900px) {
+    .discard-add-buttons {
+        flex-direction: column;
+    }
+}
+
+/*Style for plus button to go to trip form */
+.add-trip {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #fff;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    min-height: fit-content;
+}
+
+/*Style to add trip or 'Yes' to remove trip*/
+#remove-trip-button,
+.add-trip-button {
+    background-color: #0a6bff;
+    border-radius: 4px;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+    width: 26%;
+    height: 56px;
+    min-height: fit-content;
+
+    &:hover {
+        background-color: #065dd8;
+        transform: translateY(-2px);
+    }
+}
+
+@media (max-width: 900px) {
+    .add-trip-button{
+        width: 80%;
+    }
+
+    .discard-trip-button {
+        width: 80%;
+    }
+}
+
+/*Style for discard trip and 'No' to remove trip*/
+#return-button,
+.discard-trip-button {
+    background-color: #bfbfbf;
+    border-radius: 4px;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+    height: 56px;
+    min-height: fit-content;
+
+    &:hover {
+        background-color: #a6a5a5;
+        transform: translateY(-2px);
+    }
+}
+
+#remove-trip-button,
+#remove-trip-button:hover,
+#return-button:hover,
+#return-button {
+    width: 22%;
+}
+
+/*Style for remove trip button on trip card*/
+.bin {
+    background-color: #fff;
+    border: none;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+}
+
+/*Style for X button to exit preview section*/
+#exit-preview {
+    background-color: #fff;
+    border: none;
+    font-size: 2em;
+    float: right;
+    cursor: pointer;
+}

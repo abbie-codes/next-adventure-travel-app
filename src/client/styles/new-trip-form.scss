@@ -1,0 +1,42 @@
+/*Container for new trip form - set to dislay as none until new trip button clicked*/
+#form {
+    display: none;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.5em;
+
+    table {
+        padding: 3%;
+        width: 80%;
+
+        input {
+            padding: 5px;
+            width: 100%;
+        }
+
+        label {
+            color: #2196f3;
+        }
+
+    }
+
+}
+
+.required {
+    font-size: 0.5em;
+    color: grey;
+    font-style: italic;
+}
+
+.form-logo {
+    float: right;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    input {
+        margin: 5%;
+    }
+}

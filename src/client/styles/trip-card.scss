@@ -1,0 +1,40 @@
+/*Display settings for trip card*/
+.trip-card {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%; 
+
+    &:hover {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+    }
+
+    .trip-card-content {
+        font-family: 'Roboto', sans-serif;
+        line-height: 2em;
+        width: 100%;
+    }
+    
+    .trip-card-image {
+        width: 30%; 
+    }
+}
+
+/*Weather and packing list linked to card but not displayed*/
+.weather-card,
+.packing-list-card {
+    display: none;
+}
+
+/*Style for text if not trips showing*/
+.no-upcoming-trips,
+.no-past-trips {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: none;
+}

@@ -1,0 +1,121 @@
+/*Trip preview container set to display none until you click on trip card */
+#preview-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    .preview {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.1fr, 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-content: center;
+    }
+}
+
+/*Title in preview container*/
+#trip-title {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0;
+}
+
+/*Info text in preview container*/
+.info-container {
+    padding: 10%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3em;
+}
+
+/*Image in preview container */
+.preview-image {
+    padding: 1%;
+    justify-self: center;
+}
+
+/*Weather section in preview container*/
+.weather {
+    background-color: #2196f3;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+
+    .main-temp { 
+        grid-area: 1 / 1 / 2 / 3; 
+        border: 0.2px #fff solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .temp-text {
+            font-size: 1.5em;
+        }
+
+        #temp {
+            font-size: 5em;
+            font-weight: 300;
+            padding: 5%;
+        }
+    }
+    .main-wind { 
+        grid-area: 2 / 1 / 3 / 2; 
+        border: 0.2px #fff solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+    }
+    .main-rain { 
+        grid-area: 2 / 2 / 3 / 3; 
+        border: 0.2px #fff solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+    }
+    .main-max-temp { 
+        grid-area: 3 / 1 / 4 / 2; 
+        border: 0.2px #fff solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+    }
+    .main-min-temp { 
+        grid-area: 3 / 2 / 4 / 3; 
+        border: 0.2px #fff solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20%;
+    }
+
+}
+
+/*Packing list section in preview container*/
+#packing-list {
+    background-color: #FFFF88;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 80%;
+    height: 83%;
+    font-family: 'Patrick Hand', cursive;
+    padding: 5%;
+    font-size: 1.2em;
+
+    li {
+        list-style: none;
+    }
+}
+
