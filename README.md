@@ -1,6 +1,5 @@
 ![next-adventure](https://user-images.githubusercontent.com/100278218/177593882-b51876c4-e25a-4720-beb2-5f15cb6b5d94.jpg)
-![trips-page](https://user-images.githubusercontent.com/100278218/177593941-ba0f0146-accd-4472-97e0-14a5d9571268.jpg)
-![preview-trip](https://user-images.githubusercontent.com/100278218/177593974-18481e54-8833-41a2-93b0-219b1a99d06d.jpg)
+
 
 # Travel Planner App - Next Adventure
 
