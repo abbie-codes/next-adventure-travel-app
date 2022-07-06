@@ -80,19 +80,19 @@ This project was made by me but heavily influenced by:
 
 The icons in this project were downloaded from Flaticon and created by the following graphic designers: 
 
-*[Hot Temperature icon created by bqlqn](https://www.flaticon.com/free-icons/temperature)
-*[Cold Temperature icon created by bqlqn](https://www.flaticon.com/free-icons/cold)
-*[Wind icon created by Vitaly Gorbachev](https://www.flaticon.com/free-icons/wind)
-*[Water icon created by Good Ware](https://www.flaticon.com/free-icons/water)
-*[Tent icon created by Freepik](https://www.flaticon.com/free-icons/tent)
-*[Bin icon created by Freepik](https://www.flaticon.com/free-icons/trash)
-*[Clock icon created by Those Icons](https://www.flaticon.com/free-icons/clock)
-*[Checkbox icon created by designvector10](https://www.flaticon.com/free-icons/checkbox)
-*[Tick icons created by Kirill Kazachek](https://www.flaticon.com/free-icons/tick)
+* [Hot Temperature icon created by bqlqn](https://www.flaticon.com/free-icons/temperature)
+* [Cold Temperature icon created by bqlqn](https://www.flaticon.com/free-icons/cold)
+* [Wind icon created by Vitaly Gorbachev](https://www.flaticon.com/free-icons/wind)
+* [Water icon created by Good Ware](https://www.flaticon.com/free-icons/water)
+* [Tent icon created by Freepik](https://www.flaticon.com/free-icons/tent)
+* [Bin icon created by Freepik](https://www.flaticon.com/free-icons/trash)
+* [Clock icon created by Those Icons](https://www.flaticon.com/free-icons/clock)
+* [Checkbox icon created by designvector10](https://www.flaticon.com/free-icons/checkbox)
+* [Tick icons created by Kirill Kazachek](https://www.flaticon.com/free-icons/tick)
 
 Images used in this project were downloaded from Freepik and Adobe Stock and created by the following authors: 
-*[Camping image created by jcomp](https://www.freepik.com/free-photo/rear-view-young-backpacker-couple-sitting-relax-front-tent-near-lake-with-coffee-set-making-fresh-coffee-grinder-while-camping-trip-summer-vacation_16307701.htm#query=camping&position=6&from_view=search)
-*[Map image created by Tartila](https://as2.ftcdn.net/v2/jpg/02/74/59/79/1000_F_274597914_4aetfu1gWRK2M6b2lbxKtZb4qibho30j.jpg)
-*[Camping image created by macrovector](https://www.freepik.com/free-vector/camping-place-cartoon-composition-with-yellow-tent-lamp-pot-with-dinner-fire-night-sky_13749110.htm#query=camping&position=10&from_view=search)
-*[Wedding image created by iconicbestiary](https://www.freepik.com/free-vector/newlywed-couple-is-driving-car-their-honeymoon_1311191.htm#query=wedding&position=1&from_view=search)
-*[New York image created by backupstudio](https://as2.ftcdn.net/v2/jpg/02/88/02/37/1000_F_288023776_cdkenXYsV0c3mMZRbCMjyguH2JpLPa5s.jpg)
+* [Camping image created by jcomp](https://www.freepik.com/free-photo/rear-view-young-backpacker-couple-sitting-relax-front-tent-near-lake-with-coffee-set-making-fresh-coffee-grinder-while-camping-trip-summer-vacation_16307701.htm#query=camping&position=6&from_view=search)
+* [Map image created by Tartila](https://as2.ftcdn.net/v2/jpg/02/74/59/79/1000_F_274597914_4aetfu1gWRK2M6b2lbxKtZb4qibho30j.jpg)
+* [Camping image created by macrovector](https://www.freepik.com/free-vector/camping-place-cartoon-composition-with-yellow-tent-lamp-pot-with-dinner-fire-night-sky_13749110.htm#query=camping&position=10&from_view=search)
+* [Wedding image created by iconicbestiary](https://www.freepik.com/free-vector/newlywed-couple-is-driving-car-their-honeymoon_1311191.htm#query=wedding&position=1&from_view=search)
+* [New York image created by backupstudio](https://as2.ftcdn.net/v2/jpg/02/88/02/37/1000_F_288023776_cdkenXYsV0c3mMZRbCMjyguH2JpLPa5s.jpg)
