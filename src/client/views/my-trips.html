@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>My Trips</title>
+</head>
+
+<body>
+    <header>
+        <img src="/src/client/images/next-adventure-logo.png" width="200">
+        <button class="sign-out" onclick="window.location.href='index.html';">Sign out</button>
+    </header>
+    <div class="main-trips">
+        <section class="trips">
+            <h1>Trips</h1>
+            <div class="upcoming-past-trips">
+                <button class="upcoming" onclick="return Client.upcomingTrips()">Upcoming</button>
+                <button class="past" onclick="return Client.pastTrips()">Past</button>
+            </div>
+
+            <div class="upcoming-trips">
+                <div class="trip-card" onclick="return Client.showPreview(this)">
+                    <img src="/src/client/images/camping.jpg" width="30%" class="trip-card-image">
+                    <div class="trip-card-content">
+                        <h2>Camping at the Lakes</h2>
+                        <p><strong>Example Trip</strong></p>
+                        <p class="date">22/07/2022 - 27/07/2022</p>
+                        <p class="temp">29° High / 20° Low</p>
+                        <p class="days"><img src="/src/client/images/clock.png">&nbsp 5 day Trip in 30 days</p>
+                        <button class="bin" onclick="return Client.removeTripPopup(this)"><img src="/src/client/images/bin.png"><i>&nbsp
+                                Remove Trip</i></button>
+                    </div>
+                    <div class="packing-list-card">
+                        <p class="packing-item">Sunglasses</p>
+                        <p class="packing-item">Water</p>
+                        <p class="packing-item">Food</p>
+                        <p class="packing-item">Sleeping Bag</p>
+                        <p class="packing-item">Tent</p>
+                    </div>
+                    <div class="weather-card">
+                        <p class="max-temp-card">29°</p>
+                        <p class="min-temp-card">20°</p>
+                        <p class="temp-card">26°</p>
+                        <p class="precip-card">0 mm/hr</p>
+                        <p class="wind-card">1 km/hr</p>
+                    </div>
+                </div>
+                <div id="new-trip-card"></div>
+                <p class="no-upcoming-trips">You have no upcoming trips, click the plus button below to plan your next
+                    adventure!</p>
+                <button onclick="return Client.addTrip()" class="add-trip"><img src="/src/client/images/plus.png" height="50px"></button>
+            </div>
+
+            <div class="past-trips">
+                <p class="no-past-trips">You have no past trips yet, come back after more adventures.</p>
+                <div id="past-trip-card"></div>
+            </div>
+        </section>
+        <div id="preview-container">
+            <section class="preview">
+                <div class="info-container">
+                    <img src="/src/client/images/next-adventure-logo.png" width="150">
+                    <h1 id="trip-title"></h1>
+                    <p id="trip-date"></p>
+                    <p id="trip-days"></p>
+                </div>
+                <div class="preview-image">
+                    <button id="exit-preview" onclick="return Client.exitPreview()">X</button>
+                    <div id="image-container"></div>
+                </div>
+                <div class="weather-container">
+                    <div class="weather">
+                        <div class="main-temp">
+                            <p class="temp-text">Temperature:</p>
+                            <p id="temp"></p>
+                        </div>
+                        <div class="main-wind">
+                            <img src="/src/client/images/wind.png" height="16px">
+                            <div>
+                                <p>WIND</p>
+                                <p id="wind"></p>
+                            </div>
+                        </div>
+                        <div class="main-rain">
+                            <img src="/src/client/images/drop.png" height="16px">
+                            <div>
+                                <p>RAIN</p>
+                                <p id="rain"></p>
+                            </div>
+                        </div>
+                        <div class="main-max-temp">
+                            <img src="/src/client/images/hot.png" height="16px">
+                            <div>
+                                <p>MAX TEMP</p>
+                                <p id="max-temp"></p>
+                            </div>
+                        </div>
+                        <div class="main-min-temp">
+                            <img src="/src/client/images/cold.png" height="16px">
+                            <div>
+                                <p>MIN TEMP</p>
+                                <p id="min-temp"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packing-list-container">
+                    <div id="packing-list">
+                        <h2>Packing Checklist:</h2>
+                        <p>(Tick the item if you have packed it)</p>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="form">
+            <img class="form-logo" src="/src/client/images/next-adventure-logo.png" width="150"><br>
+            <h1 class="form-title">Start planning your adventure here: </h1>
+            <form id="new-trip-form">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="title">Trip title:</label>
+                            <p class="required">*Required</p>
+                        </td>
+                        <td>
+                            <input type="text" id="title" name="title" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="title">City:</label>
+                            <p class="required">*Required</p>
+                        </td>
+                        <td>
+                            <input type="text" id="city" name="city" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="departure-date">Departure date:</label>
+                            <p class="required">*Required</p>
+                        </td>
+                        <td>
+                            <input type="date" id="departure-date" name="departure-date" min="25/06/2022" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="return-date">Return date:</label>
+                            <p class="required">*Required</p>
+                        </td>
+                        <td>
+                            <input type="date" id="return-date" name="return-date" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item1">Items to pack:</label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item1" name="packing-item1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item2"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item2" name="packing-item2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item3"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item3" name="packing-item3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item4"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item4" name="packing-item4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item5"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item5" name="packing-item5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item6"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item6" name="packing-item6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item7"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item7" name="packing-item7">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item8"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item8" name="packing-item8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item9"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item9" name="packing-item9">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="packing-item10"></label>
+                        </td>
+                        <td>
+                            <input type="text" class="packing-item" id="packing-item10" name="packing-item10">
+                        </td>
+                    </tr>
+                </table>
+                <div class="discard-add-buttons">
+                    <button class="discard-trip-button" onclick="return Client.exitForm()">Discard trip</button>
+                    <input class="add-trip-button" type="submit" value="Add my trip">
+                </div>
+            </form>
+        </section>
+        <section id="remove-trip">
+            <img class="form-logo" src="/src/client/images/next-adventure-logo.png" width="150"><br>
+            <h1 class="form-title">Are you sure you want to remove this trip?</h1>
+            <p>Selecting yes will permenantly remove your trip.</p>
+            <div class="discard-add-buttons">
+                <button id="return-button">No, return to trips</button>
+                <button id="remove-trip-button">Yes, delete forever</button>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+
+
+</html>
