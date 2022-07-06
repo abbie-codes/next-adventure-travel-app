@@ -14,8 +14,8 @@ After the card has been created you can click the card and get a larger preview 
 This project uses 3 external API's: 
 
 * [GeonamesAPI](http://www.geonames.org/export/web-services.html) To retreive a latitude and longitude from a city name
-* [WeatherbitAPI] (https://www.weatherbit.io/api) To get the weather forecast for the next 16 days from the latitude and longitude provided by Geonames API. If the travel date is too far in the future then I use a different API call from Weatherbit's API which provides typical weather data. 
-* [PixabayAPI] (https://pixabay.com/api/docs/) To retrieve a photo for each location to add to the trip card. 
+* [WeatherbitAPI](https://www.weatherbit.io/api) To get the weather forecast for the next 16 days from the latitude and longitude provided by Geonames API. If the travel date is too far in the future then I use a different API call from Weatherbit's API which provides typical weather data. 
+* [PixabayAPI](https://pixabay.com/api/docs/) To retrieve a photo for each location to add to the trip card. 
 
 ### Dependancies 
 
